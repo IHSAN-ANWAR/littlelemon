@@ -25,6 +25,8 @@ header{
 .logo img{
   height: 60px;
   object-fit: cover;
+  mix-blend-mode: multiply;
+  
 }
 
 nav ul{
