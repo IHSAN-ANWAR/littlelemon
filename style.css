@@ -19,13 +19,15 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: #6e6a6a;
+  background: #222;
 }
 
 .logo img{
   height: 60px;
   object-fit: cover;
   mix-blend-mode: multiply;
+  border: 1px solid black;
+
   
 }
 
@@ -143,7 +145,7 @@ main{
 }
 
 .card-content button{
-  padding: 8px 15px;
+  padding: 12px 15px;
   border:none;
   border-radius:5px;
   background: #ffcc00;
