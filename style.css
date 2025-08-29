@@ -1,0 +1,173 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Body */
+body{
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #6e6a6a;
+}
+
+.logo img{
+  height: 60px;
+  object-fit: cover;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+/* Main */
+main{
+  flex: 1;
+}
+
+/* Banner */
+.banner{
+  position: relative;
+  height: 300px;
+  background: url('3card.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner::after{
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.banner-content{
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.banner-content h1{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.banner-content p{
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Title */
+.title{
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.title h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* Cards */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 0 50px 50px;
+}
+
+.card{
+  background: aliceblue;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 15px;
+}
+
+.card-content h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card-content p{
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-content button{
+  padding: 8px 15px;
+  border:none;
+  border-radius:5px;
+  background: #ffcc00;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-content button:hover{
+  background: #e6b800;
+}
+
+/* Footer */
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer img{
+  height: 40px;
+  border-radius:50%;
+  vertical-align:middle;
+}
